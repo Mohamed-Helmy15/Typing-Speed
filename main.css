@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.typing {
+  padding: 20px;
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+}
+.selection {
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+}
+.selection h3 {
+  padding: 10px;
+}
+.selection select {
+  outline: none;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  font-size: 17px;
+  border: 1px solid #4caf50;
+}
+.desc {
+  text-align: left;
+  font-size: 12px;
+  color: #777;
+  margin: 10px auto;
+  width: 50%;
+  padding: 10px;
+}
+.desc p {
+  margin-bottom: 10px;
+}
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 10px 30px;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  cursor: pointer;
+  margin: auto;
+  font-size: 17px;
+}
+.game-container {
+  padding: 20px;
+  background-color: #eee;
+}
+.game-container .title {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.game-container .title .easy {
+  color: #0075ff;
+}
+.game-container .title .medium {
+  color: #ffc107;
+}
+.game-container .title .hard {
+  color: red;
+}
+.game-container .title .num-words {
+  font-size: 20px;
+  font-weight: bold;
+}
+.game-container .active-word {
+  background-color: white;
+  margin: 10px 0;
+  padding: 30px 0;
+  text-align: center;
+}
+.game-container .active-word span {
+  background-color: #4caf50;
+  padding: 10px 15px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  user-select: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.game-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: #4caf50;
+  caret-color: #4caf50;
+  border: 1px solid #4caf50;
+}
+.game-container input:focus {
+  outline: none;
+}
+.game-container .all-words {
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.game-container .all-words div {
+  background-color: #4caf50;
+  margin: 5px 5px 5px 0;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.game-container .score {
+  margin-bottom: 10px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.game-container .score .remain {
+  flex: 1;
+}
+.game-container .score .remain span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.game-container .score .time {
+  flex: 1;
+  text-align: right;
+}
+.result {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+}
+.result .good {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+}
+.result .good span {
+  color: #00ff08;
+}
+.result .over {
+  padding: 10px;
+  background-color: red;
+  color: white;
+}

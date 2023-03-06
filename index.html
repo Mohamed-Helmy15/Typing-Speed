@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Typing Test</title>
+  </head>
+  <body>
+    <h3 class="typing">typing Speed Test Welcome :)...</h3>
+    <div class="selection">
+      <h3>Choose your level</h3>
+      <select name="level" id="level">
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+      </select>
+      <div class="desc">
+        <p>*Easy Level => write the word without Capital sensitive</p>
+        <p>
+          *Medium and Hard Level => must write the word with Capital sensitive
+          but hard level contains more difficult words than medium
+        </p>
+      </div>
+      <button class="btn start">Start</button>
+    </div>
+    <div class="game-container">
+      <div class="title">
+        you are playing in
+        <span class="level"></span>
+        level and this level contains <span class="num-words"></span> words
+      </div>
+      <div class="active-word"></div>
+      <input type="text" />
+      <div class="all-words"></div>
+      <div class="score">
+        <div class="remain"><span>20</span> words remaining</div>
+        <div class="time">00:0<span>5</span></div>
+      </div>
+    </div>
+    <div class="result">
+      <div class="good">Your speed is pretty <span>Good</span></div>
+      <div class="over">Game Over :( please try again</div>
+    </div>
+    <button class="btn reset">Reset The Test</button>
+    <script src="main.js"></script>
+  </body>
+</html>
